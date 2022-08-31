@@ -18,7 +18,7 @@ a {
   display: block;
   width: 100%;
   height: 700px;
-  background-image: url("/semana4/netflix/src/img/netflix.jpg");
+  background-image: url("/assets/img/netflix.jpg");
   background-repeat: no-repeat;
   border-bottom: 10px solid gray;
 }
@@ -276,4 +276,27 @@ footer .asides aside li {
 }
 footer .asides aside li:hover {
   text-decoration: underline;
+}
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
 }

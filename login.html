@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Netflix México: Ve series online, ve películas online</title>
 </head>
 <body>
@@ -17,19 +18,23 @@
             </header>
             
             <main>  
-                <form action="browse.html">
+                <form>
                     <div class="forma-login">
                         <div class="inicia-sesion">
                             <h1>Inicia sesión</h1>
                         </div>
                         <div class="user-email">
-                            <input type="text" class="input-email" name="email" placeholder="Email o número de teléfono">
+                            <input type="email" class="input-email" id="user" name="user" placeholder="Email o número de teléfono">
                         </div>
                         <div class="user-pass">
-                            <input type="password" class="input-pass" name="contrasena" placeholder="Contraseña">
+                            <input type="password" class="input-pass" id="pass" name="pass" placeholder="Contraseña">
                         </div> 
                         <div class="user-iniciar">
-                            <input type="submit" class="input-iniciar" name="iniciar" value="Iniciar sesión">
+                            <div class="alert" id="loginAlert">
+                                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                Usuario invalido.
+                              </div>
+                            <input type="button" class="input-iniciar" id="iniciar" name="iniciar" value="Iniciar sesión" onclick="login()">
                         </div>
                         <div class="opciones">
                             <div class="recuerdame">
@@ -105,6 +110,7 @@
 
         </footer>
     </div>
-
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 </html>
