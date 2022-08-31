@@ -1,0 +1,240 @@
+body {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 1.5rem;
+}
+a {
+color: #eeeeee;
+}
+
+.container{
+    background-color: #141414;
+    /*opacity: 0.3;
+    filter: alpha(opacity=30);  For IE8 and earlier */
+    margin: 0 auto;
+}
+.principal{
+    display: block;
+    width: 100%;
+    height: 700px;
+    border-bottom: 10px solid gray;
+}
+
+header {
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 114px;
+        margin-top: 0;
+    }
+} 
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        list-style-type: none;
+    }
+    li {
+        font-size: 1.3rem;
+        margin: 0 1rem;
+    }
+    button {
+        background-color: #e50914;
+        line-height: normal;
+        padding: 7px 20px;
+        font-weight: 400;
+        font-size: 1rem;
+        float: right;
+        border: 0;
+    }
+}
+
+.idioma{
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    padding: 0.25rem 1.375rem;
+    height: 34px;
+    width: 120px;
+}
+
+.authLinks {
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    /* margin-top: 0.5rem; */
+}
+
+.idiomas{
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    padding: 0.25rem 1.375rem;
+    height: 34px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 105px;
+}
+
+footer{
+    display: block;
+    width: 1200px;
+    height: 320px;
+    .preguntas{
+        display: inline-block;
+        text-align: center;
+        height: 30px;
+        padding-top: 30px;
+        padding-left: 100px;
+        padding-bottom: 10px;
+        color: gray;
+    }
+    .preguntas:hover {
+        text-decoration: underline;
+    }
+    .languaje{
+        display: block;
+        padding-top: 30px;
+        padding-left: 100px;
+        height: 30px;
+        border: 1 solid white;
+    }
+    .empresa{
+        display: inline-block;
+        text-align: center;
+        height: 30px;
+        padding-top: 30px;
+        padding-left: 110px;
+        color: gray;
+    }
+    .asides{
+        display: flex;
+        padding-left: 90px;
+        
+    }
+    .asides aside{
+        display: inline;
+        width: 80%;
+        ul {
+            margin: 0;
+            padding: 0;
+            display: inline;
+            list-style: none;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        li {
+            font-size: 14px;
+            margin: 0 1rem;
+            color: gray;
+            list-style: none;
+        }
+        li:hover {
+            text-decoration: underline;
+        }
+        
+    }
+}
+
+
+main{
+    display: block;
+    text-align: center;
+}
+.quien{
+    margin-top: 40px;
+    h1{
+        display: inline-flex;
+        justify-content: center;
+        font-size: 45px;
+        line-height: normal;
+        margin: 0;
+        font-weight: normal;
+        
+    }
+    
+}
+
+.browse-perfil{
+    display: block;
+}
+
+.perfiles{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.perfil{
+    height: 10vw;
+    width: 10vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #333;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+    margin: 12px;
+    display: block;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        padding: 0;
+        margin:0;
+        border: 2px solid #333;
+    
+    }
+    img:hover{
+        border: 2px solid #fff;
+    }
+    h4{
+        line-height: 1.2em;
+        min-height: 1.8em;
+        color: grey;
+        display: block;
+        text-align: center;
+        font-size: 1.3vw;
+        margin: 0.6em 0;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    h4:hover{
+        color:#fff;
+    }
+}
+
+.link-listado{
+    text-decoration: none;
+}
+
+.admin-perfiles{
+    margin: 2em 0 1em 0;
+    font-size: 1.2vw;
+    border: 1px solid grey;
+    color: grey;
+    padding: 0.5em 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top:80px;
+}

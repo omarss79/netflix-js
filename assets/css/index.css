@@ -1,0 +1,259 @@
+body {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5rem;
+}
+a {
+  color: #eeeeee;
+}
+.container {
+  background-color: #000;
+  /*opacity: 0.3;
+    filter: alpha(opacity=30);  For IE8 and earlier */
+  margin: 0 auto;
+}
+.principal {
+  display: block;
+  width: 100%;
+  height: 700px;
+  background-image: url("/semana4/netflix/src/img/netflix.jpg");
+  background-repeat: no-repeat;
+  border-bottom: 10px solid gray;
+}
+header {
+  padding: 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 164px;
+  margin-top: 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+nav li {
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+nav button {
+  background-color: #e50914;
+  line-height: normal;
+  padding: 7px 20px;
+  font-weight: 400;
+  font-size: 1rem;
+  float: right;
+  border: 0;
+}
+.idioma {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #aaa;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.25rem 1.375rem;
+  height: 34px;
+  width: 120px;
+}
+.authLinks {
+  color: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  /* margin-top: 0.5rem; */
+}
+main .presentacion {
+  display: block;
+  text-align: center;
+  margin-top: 130px;
+}
+main .presentacion h1 {
+  display: inline-flex;
+  text-align: center;
+  width: 700px;
+  font-size: 50px;
+  line-height: normal;
+  margin: 0;
+  font-weight: bold;
+}
+main .presentacion h3 {
+  display: inline-flex;
+  text-align: center;
+  width: 700px;
+  font-size: 26px;
+  line-height: normal;
+  margin-top: 20px;
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+}
+main .presentacion p {
+  display: inline-flex;
+  text-align: center;
+  width: 900px;
+  font-size: 20px;
+  line-height: normal;
+  margin-top: 10px;
+  font-weight: normal;
+}
+main .email {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+main .email-user {
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border: solid 1px #8c8c8c;
+  appearance: none;
+  color: #000;
+  padding: 10px 11px;
+  height: 54px;
+  width: 450px;
+}
+main .suscribirme {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #e50914;
+  color: #fff;
+  padding: 0 2em;
+  min-width: 74px;
+  min-height: 50px;
+  margin: 0;
+  border: 0;
+  width: 150px;
+}
+.disfruta-tv {
+  /* display: block; */
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 1200px;
+  height: 500px;
+  border-bottom: 10px solid gray;
+}
+.disfruta-tv .message {
+  width: 40%;
+  margin-top: 150px;
+}
+.disfruta-tv .message h1 {
+  font-size: 40px;
+  line-height: normal;
+}
+.disfruta-tv .message h2 {
+  font-size: 30px;
+  line-height: normal;
+}
+.disfruta-tv .animacion {
+  width: 50%;
+}
+.disfruta-tv .animacion .video-imagen {
+  position: absolute;
+}
+.disfruta-tv .animacion .video-animacion {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 70px;
+}
+.descarga-series {
+  /* display: block; */
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  width: 1200px;
+  height: 500px;
+  border-bottom: 10px solid gray;
+}
+.descarga-series .message {
+  width: 50%;
+  margin-top: 150px;
+}
+.descarga-series .message h1 {
+  font-size: 40px;
+  line-height: normal;
+}
+.descarga-series .message h2 {
+  font-size: 30px;
+  line-height: normal;
+}
+.descarga-series .animacion {
+  width: 50%;
+}
+.descarga-series .animacion .imagen {
+  width: 100%;
+}
+.idiomas {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #aaa;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.25rem 1.375rem;
+  height: 34px;
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 105px;
+}
+footer {
+  display: block;
+  width: 1200px;
+  height: 320px;
+}
+footer .preguntas {
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  padding-top: 30px;
+  padding-left: 100px;
+  padding-bottom: 10px;
+  color: gray;
+}
+footer .preguntas:hover {
+  text-decoration: underline;
+}
+footer .languaje {
+  display: block;
+  padding-top: 30px;
+  padding-left: 100px;
+  height: 30px;
+  border: 1 solid white;
+}
+footer .empresa {
+  display: inline-block;
+  text-align: center;
+  height: 30px;
+  padding-top: 30px;
+  padding-left: 110px;
+  color: gray;
+}
+footer .asides {
+  display: flex;
+  padding-left: 90px;
+}
+footer .asides aside {
+  display: inline;
+  width: 80%;
+}
+footer .asides aside ul {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer .asides aside li {
+  font-size: 14px;
+  margin: 0 1rem;
+  color: gray;
+  list-style: none;
+}
+footer .asides aside li:hover {
+  text-decoration: underline;
+}

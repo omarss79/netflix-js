@@ -1,0 +1,36 @@
+#slider {
+  width: 50%;
+  margin-left: 80px;
+  display: flex;
+  margin-top: 5px;
+  height: 225px;
+  border: 2 solid green;
+}
+#slider ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-wrap: nowrap;
+}
+#slider li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#slider img {
+  width: 341px;
+  height: 192px;
+  overflow: hidden;
+}
+#prevBtn,
+#nextBtn {
+  display: block;
+  width: 30px;
+  height: 77px;
+  /* position:absolute; */
+  left: 30px;
+  top: 125px;
+}
