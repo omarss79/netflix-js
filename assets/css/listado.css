@@ -101,3 +101,10 @@ main {
 .carrete-titulo h3 {
   margin-left: 80px;
 }
+.lista {
+  background-color: black;
+}
+.lista .lista-title {
+  padding-left: 60px;
+  font-size: 1.5em;
+}

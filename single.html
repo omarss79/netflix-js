@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/template.css">
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/single.css">
+    <link rel="stylesheet" href="assets/css/logout.css">
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
     <title>Netflix México: Ve series online, ve películas online</title>
     <!-- <script
@@ -40,7 +41,7 @@
                             <i class="fa fa-bell"></i>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-user"></i></a>
+                            <a href="#" id="myBtnLogout"><i class="fa fa-user"></i></a>
                         </li>
                     </ul>
                 </nav>
@@ -139,20 +140,19 @@
         </footer>
     </div>
     
-	<!-- <script type="text/javascript">
-		$(document).ready(function(){
-			$(window).on("scroll", function() {
-                if($(window).scrollTop() > 50) {
-                    $(".header1").addClass("active");
-                    console.log("add");
-                } else {
-                    //remove the background property so it comes transparent again (defined in your css)
-                    $(".header1").removeClass("active");
-                    console.log("remove");
-                }
-            });
-		});
-    </script> -->
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            
+            <div class="opc-resumen">
+                <div class="mas-info">
+                    <button class="btn-mas-info" id="cerrarSesion">Cerrar sesión</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="assets/js/config.js"></script>
     <script src="assets/js/single.js"></script>
