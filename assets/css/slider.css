@@ -18,7 +18,7 @@ body {
   background-color: #141414;
   font-family: "Heebo", sans-serif;
 }
-.slide-container {
+.container {
   position: relative;
 }
 .logo {
@@ -27,10 +27,10 @@ body {
   text-align: center;
 }
 /*
-  *
-  * THE SLIDER CONTAINER
-  *
-  *********************************/
+*
+* THE SLIDER CONTAINER
+*
+*********************************/
 .slider {
   width: 100%;
   overflow-x: scroll;
@@ -41,10 +41,10 @@ body {
   padding-bottom: var(--slider-py);
 }
 /*
-  *
-  * SLIDER INDICATORS
-  *
-  *********************************/
+*
+* SLIDER INDICATORS
+*
+*********************************/
 .container-indicators {
   width: 100px;
   position: absolute;
@@ -62,10 +62,10 @@ body {
   background-color: white;
 }
 /*
-  *
-  * MOVIE ELEMENTS!
-  *
-  *********************************/
+*
+* MOVIE ELEMENTS!
+*
+*********************************/
 .movie {
   width: var(--movie-width);
   height: var(--movie-height);
@@ -148,10 +148,10 @@ body {
   margin-right: 0;
 }
 /*
-  *
-  * BUTTONS
-  *
-  *********************************/
+*
+* BUTTONS
+*
+*********************************/
 .btn-nav {
   width: var(--arrow-width);
   height: var(--movie-height);
@@ -178,8 +178,8 @@ body {
   }
 }
 @media only screen and (min-width: 901px) {
-  .slide-container:hover .btn-nav,
-  .slide-container:hover .slide-container-indicators {
+  .container:hover .btn-nav,
+  .container:hover .container-indicators {
     visibility: visible;
   }
 }

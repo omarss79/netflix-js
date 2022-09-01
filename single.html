@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/template.css">
     <link rel="stylesheet" href="assets/css/slider.css">
-    <link rel="stylesheet" href="assets/css/listado.css">
+    <link rel="stylesheet" href="assets/css/single.css">
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
     <title>Netflix México: Ve series online, ve películas online</title>
     <!-- <script
@@ -48,22 +48,31 @@
             
             <main>
                 <div class="resumen">
-                    <div class="imagen-logo">
+                    <!-- <div class="imagen-logo">
                         <img class="logo-pelicula" src="/assets/img/netflix.jpg" id="imagePrincipal" alt="">
-                    </div>
+                    </div> -->
                     <div class="sinopsis">
                         <span class="title" id="titlePrincipal"></span>
-                    </div>
-                    <div class="sinopsis">
-                        <!-- <span class="sinopsis-text" id="sinopsisPrincipal"></span> -->
                     </div>
                     <div class="opc-resumen">
                         <div class="reproducir">
                             <button class="btn-reproducir">Reproducir</button>
                         </div>
-                        <div class="mas-info">
-                            <button class="btn-mas-info">Mas información</button>
-                        </div>
+                    </div>
+                </div>
+                
+                <div class="detalles">
+                    <div class="sinopsis">
+                        <span class="sinopsis-name">Sinopsis</span><br>
+                        <span class="sinopsis-text" id="sinopsisPrincipal"></span>
+                    </div>
+                    <div class="sinopsis">
+                        <span class="sinopsis-name">Géneros</span><br>
+                        <span class="sinopsis-text" id="generoPrincipal"></span>
+                    </div>
+                    <div class="sinopsis">
+                        <span class="sinopsis-name">Año</span><br>
+                        <span class="sinopsis-text" id="datePrincipal"></span>
                     </div>
                 </div>
             </main>
@@ -146,6 +155,6 @@
     </script> -->
     
     <script src="assets/js/config.js"></script>
-    <script src="assets/js/listado.js"></script>
+    <script src="assets/js/single.js"></script>
 </body>
 </html>
