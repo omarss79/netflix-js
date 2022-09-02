@@ -2,10 +2,8 @@ let itemPrincipal = 75174;
 // let movies = [];
 let movies = [];
 
-
 document.body.onload = async function() {    
     let token = localStorage.getItem('tmbd_user_token');
-    console.log(token);
     if(token == "" || token == undefined) location.href = 'login.html';
 
     getItemPrincipal();
@@ -67,7 +65,6 @@ document.body.onload = async function() {
     }
 
     populateSlider();
-    // populateSlider();
 
     // delete the initial movie in the html
     const initialMovie = document.getElementById("movie0");
@@ -130,9 +127,6 @@ document.body.onload = async function() {
         }
     });
 
-        
-    // populateSlider();
-
 }
 
 async function getItemPrincipal(){
@@ -168,7 +162,8 @@ async function getListTopRated(){
 
 async function getTopRatedTMDB() {
     try {        
-        let url = API_URL+'/3/movie/top_rated?api_key='+API_KEY+'&language=en-US&page=1';
+        let url = API_URL+'/3/movie/popular?api_key='+API_KEY+'&language=en-US&page=1';
+        // let url = API_URL+'/3/movie/top_rated?api_key='+API_KEY+'&language=en-US&page=1';
         const response = await axios.get(url);
         if (response) { 
             return response.data.results;

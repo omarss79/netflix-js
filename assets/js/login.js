@@ -7,6 +7,18 @@ function login(){
     let user = document.getElementById("user").value;
     let pass = document.getElementById("pass").value;
 
+    if(user === ""){
+        let alert = document.getElementById("loginAlert");
+        alert.style.display = 'block';
+        return false
+    }
+    
+    if(pass === ""){
+        let alert = document.getElementById("loginAlert");
+        alert.style.display = 'block';
+        return false
+    }
+
     let auth = authenticationUser(user,pass)
     
     let token
@@ -31,7 +43,6 @@ async function getUser() {
         const response = await axios.get(url);
         console.log(response);
         localStorage.setItem('tmbd_user_token', response.data.request_token);
-        //localStorage.removeItem('tmbd_user_token');
         location.href = 'browse.html';
     } catch (error) {
         console.log("Entro a error");
